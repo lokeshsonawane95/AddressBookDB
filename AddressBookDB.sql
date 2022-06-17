@@ -19,3 +19,9 @@ Email varchar(50) not null);
 
 select * from AddressBook
 
+-- UC3 Insert Contacts into AddressBook table
+
+insert into AddressBook values
+('Lokesh', 'Sonawane', 'Warje', 'Pune', 'Maharashtra', 411058, 9876543210, 'lokesh.sonawane@gmail.com'),
+('John', 'Connor', 'Warje', 'Pune', 'Maharashtra', 411058, 9876951210, 'john.connor@gmail.com'),
+('Lokesh', 'Sonawane', 'Warje', 'Pune', 'Maharashtra', 411058, 9876543210, 'lokesh.sonawane@gmail.com');
