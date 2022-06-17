@@ -60,3 +60,15 @@ select * from AddressBook;
 
 select * from AddressBook where City = 'Pune' order by FirstName;
 
+-- UC9 Identify each address book with name and type
+
+alter table AddressBook add AddressBookName varchar(50), Type varchar(30);
+
+update AddressBook set AddressBookName = 'A', Type = 'Friends' where FirstName = 'Lokesh';
+
+update AddressBook set AddressBookName = 'B', Type = 'Friends' where FirstName = 'Mohak';
+
+update AddressBook set AddressBookName = 'A', Type = 'Proffesion' where FirstName = 'John';
+
+update AddressBook set AddressBookName = 'B', Type = 'Proffesion' where FirstName = 'Ken';
+
