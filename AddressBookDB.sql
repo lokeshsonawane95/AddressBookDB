@@ -40,3 +40,14 @@ select * from AddressBook where City = 'Pune';
 
 select * from AddressBook where State = 'Karnataka';
 
+-- UC7 size of AddressBook table by City and State
+
+insert into AddressBook values
+('John', 'Connor', 'Andheri', 'Mumbai', 'Maharashtra', 400047, 9876951741, 'john.connor@gmail.com');
+
+-- size by City
+select City, count(City) as 'Total Contacts' from AddressBook group by City;
+
+-- size by State
+select State, count(State) as 'Total Contacts' from AddressBook group by State;
+
