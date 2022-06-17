@@ -30,3 +30,7 @@ insert into AddressBook values
 
 update AddressBook set Phone = 9512364703 where FirstName = 'Mohak';
 
+-- UC5 Detele contact using first name
+
+delete from AddressBook where FirstName = 'John';
+
