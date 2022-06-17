@@ -34,3 +34,9 @@ update AddressBook set Phone = 9512364703 where FirstName = 'Mohak';
 
 delete from AddressBook where FirstName = 'John';
 
+-- UC6 Retrieve person belonging to City or State from the AddressBook
+
+select * from AddressBook where City = 'Pune';
+
+select * from AddressBook where State = 'Karnataka';
+
